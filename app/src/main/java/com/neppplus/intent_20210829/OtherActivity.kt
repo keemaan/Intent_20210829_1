@@ -12,8 +12,9 @@ class OtherActivity : AppCompatActivity() {
 
         // Intent를 이용, 메인으로 이동
         returnToMainBtn.setOnClickListener {
-            val myIntent = Intent( this, MainActivity::class.java)
-            startActivity( myIntent )
+//            val myIntent = Intent( this, MainActivity::class.java)
+//            startActivity( myIntent )
+            finish()
 
         }
     }
