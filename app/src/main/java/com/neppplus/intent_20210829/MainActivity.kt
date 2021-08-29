@@ -19,5 +19,15 @@ class MainActivity : AppCompatActivity() {
             startActivity( myIntent )
 
         }
+
+        sendMessageBtn.setOnClickListener {
+//      메세지 보내기가 눌리면?
+//      입력한 내용이 어떻게 되는지 변수에 저장
+            val inputContent = messageEdt.text.toString()
+//       메세지 조회화면으로 (입력한 내용을 가지고) 이동
+            val myIntent = Intent(this, ViewMessageActivity::class.java)
+            startActivity(myIntent)
+
+        }
     }
 }
